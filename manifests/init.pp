@@ -10,7 +10,7 @@
 class jenkins {
   
   $servername = hiera('jenkins::web::server', 'jenkins')
-  $doc_root   = hiera('jenkins::web::docroot','/var/wwww/html')
+  $doc_root   = hiera('jenkins::web::docroot','/var/www/html')
 
   include jenkins::packages
   include jenkins::repo
